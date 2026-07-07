@@ -171,42 +171,61 @@ const HeroSection: React.FC = () => {
             </motion.div>
 
             {/* Right - Featured Property Card */}
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-[0px_25px_50px_-12px_#e5e7eb]">
+            <motion.div
+              initial={prefersReducedMotion ? {} : { opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, delay: 0.5, ease: "easeOut" }}
+              className="relative"
+            >
+              {/* Floating AI badge */}
+              <div className="absolute -top-4 -left-4 z-20 bg-[#111827] text-white font-manrope font-extrabold text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-1.5">
+                <span className="font-material-icons text-sm text-[#D4755B]" aria-hidden="true">auto_awesome</span>
+                AI MATCHED
+              </div>
+
+              <div className="rounded-2xl overflow-hidden shadow-[0px_32px_64px_-12px_rgba(17,24,39,0.18)] ring-1 ring-black/5">
                 <div className="relative h-[625px]">
                   <img
                     src={propertyImages[3]}
-                    alt="Villa Serenity"
+                    alt="Skyline Residency, Bandra West"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
                   {/* Property Info Overlay */}
-                  <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/90 border border-white/20 rounded-xl p-4 shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
-                    <div className="flex justify-between items-start mb-3">
+                  <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/95 border border-white/30 rounded-2xl p-5 shadow-[0px_20px_40px_-8px_rgba(0,0,0,0.2)]">
+                    <div className="flex justify-between items-start mb-4">
                       <div>
-                        <h3 className="font-fraunces font-bold text-lg text-[#111827] mb-1">Villa Serenity</h3>
-                        <p className="font-space-mono text-xs text-[#6b7280] uppercase tracking-wide">Beverly Hills, CA</p>
+                        <h3 className="font-fraunces font-extrabold text-xl text-[#111827] mb-1">Skyline Residency</h3>
+                        <p className="font-space-mono text-xs text-[#6b7280] uppercase tracking-wide flex items-center gap-1">
+                          <span className="font-material-icons text-xs" aria-hidden="true">location_on</span>
+                          Bandra West, Mumbai
+                        </p>
                       </div>
-                      <div className="bg-[rgba(212,117,91,0.1)] px-2 py-1 rounded">
-                        <span className="font-manrope font-bold text-xs text-[#D4755B]">AI MATCH: 98%</span>
+                      <div className="bg-gradient-to-r from-[#D4755B] to-[#EC4613] px-3 py-1.5 rounded-lg shadow-sm">
+                        <span className="font-manrope font-extrabold text-xs text-white">98% MATCH</span>
                       </div>
                     </div>
-                    <div className="border-t border-[#e5e7eb] pt-3 flex items-center justify-between">
-                      <span className="font-space-mono text-sm text-[#4b5563]">$4,250,000</span>
-                      <div className="flex items-center gap-4 text-[#4b5563]">
-                        <div className="flex items-center gap-1">
-                          <span className="font-material-icons text-xs" aria-hidden="true">bed</span>
-                          <span className="font-manrope text-sm">4</span>
+                    <div className="border-t border-[#e5e7eb] pt-4 flex items-center justify-between">
+                      <div>
+                        <span className="font-space-mono font-bold text-lg text-[#111827]">₹4.2 Cr</span>
+                        <span className="font-manrope text-xs text-[#6b7280] ml-2">onwards</span>
+                      </div>
+                      <div className="flex items-center gap-5 text-[#4b5563]">
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-material-icons text-sm text-[#D4755B]" aria-hidden="true">bed</span>
+                          <span className="font-manrope font-bold text-sm">4 BHK</span>
                         </div>
-                        <div className="flex items-center gap-1">
-                          <span className="font-material-icons text-xs" aria-hidden="true">shower</span>
-                          <span className="font-manrope text-sm">3.5</span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-material-icons text-sm text-[#D4755B]" aria-hidden="true">square_foot</span>
+                          <span className="font-manrope font-bold text-sm">2,400 sqft</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
