@@ -18,11 +18,11 @@ const FAQSection: React.FC = () => {
     {
       id: 2,
       question: "What areas do you currently cover?",
-      answer: "We currently cover major metropolitan areas including Ahmedabad, Mumbai, Delhi, Bangalore, and Pune. We're expanding to more cities across India and will update our coverage area regularly."
+      answer: "We currently cover major metropolitan areas including Raipur, Ahmedabad, Mumbai, Delhi, Bangalore, and Pune. We're expanding to more cities across India and will update our coverage area regularly."
     },
     {
       id: 3,
-      question: "Can I list my property exclusively with BuildEstate?",
+      question: "Can I list my property exclusively with PropVista?",
       answer: "Yes, we offer exclusive listing agreements with premium marketing benefits including professional photography, virtual tours, AI-powered listing optimization, and dedicated property consultant support throughout the selling process."
     },
     {
@@ -51,7 +51,7 @@ const FAQSection: React.FC = () => {
           </h2>
           <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
             Find quick answers to your most pressing questions about buying, selling, and
-            partnering with BuildEstate.
+            partnering with PropVista.
           </p>
         </div>
 

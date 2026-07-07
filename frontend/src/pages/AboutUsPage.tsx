@@ -12,8 +12,8 @@ import AboutCTASection from '../components/about/AboutCTASection';
 
 const AboutUsPage: React.FC = () => {
   useSEO({
-    title: 'About BuildEstate — AI-Powered Real Estate in India',
-    description: 'BuildEstate is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and technology.',
+    title: 'About PropVista — AI-Powered Real Estate in India',
+    description: 'PropVista is an AI-powered real estate platform serving homebuyers and sellers across Raipur, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and technology.',
     url: 'https://buildestate.vercel.app/about',
   });
 

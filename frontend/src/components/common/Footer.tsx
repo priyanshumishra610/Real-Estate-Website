@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Youtube, MapPin, Phone, Mail } from 'lucide-react';
+import {
+  BRAND_NAME,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  OFFICE_ADDRESS_LINES,
+  OFFICE_MAPS_URL,
+} from '../../constants/brand';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -19,8 +27,8 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div>
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="BuildEstate" loading="lazy" decoding="async" width="40" height="40" className="h-10 w-auto brightness-0 invert" />
-              <span className="font-fraunces text-2xl font-bold">BuildEstate</span>
+              <img src="/logo.png" alt={BRAND_NAME} loading="lazy" decoding="async" width="40" height="40" className="h-10 w-auto brightness-0 invert" />
+              <span className="font-fraunces text-2xl font-bold">{BRAND_NAME}</span>
             </Link>
             <p className="font-manrope font-extralight text-[#9ca3af] text-sm leading-relaxed mb-6">
               AI-powered luxury real estate platform connecting you with your dream home through intelligent matching and personalized recommendations.
@@ -112,25 +120,24 @@ const Footer: React.FC = () => {
             <h4 className="font-syne font-bold text-white text-lg mb-6">Contact Info</h4>
             <ul className="space-y-4">
               <li>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color] group">
+                <a href={OFFICE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color] group">
                   <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#D4755B]" />
                   <span className="leading-relaxed">
-                    502, Devpath Building,<br />
-                    Near Torrent Lab,<br />
-                    Ashram Road, Ahmedabad
+                    {OFFICE_ADDRESS_LINES[0]}<br />
+                    {OFFICE_ADDRESS_LINES[1]}
                   </span>
                 </a>
               </li>
               <li>
-                <a href="tel:+919876543210" className="flex items-center gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color]">
+                <a href={`tel:${CONTACT_PHONE_TEL}`} className="flex items-center gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color]">
                   <Phone className="w-5 h-5 flex-shrink-0 text-[#D4755B]" />
-                  <span>+91 98765 43210</span>
+                  <span>{CONTACT_PHONE_DISPLAY}</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@buildestate.com" className="flex items-center gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color]">
+                <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white transition-[color]">
                   <Mail className="w-5 h-5 flex-shrink-0 text-[#D4755B]" />
-                  <span>hello@buildestate.com</span>
+                  <span>{CONTACT_EMAIL}</span>
                 </a>
               </li>
             </ul>
@@ -168,7 +175,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-[rgba(255,255,255,0.1)] pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-manrope font-extralight text-[#6b7280] text-sm text-center md:text-left">
-              © 2026 BuildEstate. All rights reserved. Powered by AI.
+              © 2026 {BRAND_NAME}. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <a href="#" className="font-manrope font-extralight text-[#6b7280] text-sm hover:text-white transition-[color]">

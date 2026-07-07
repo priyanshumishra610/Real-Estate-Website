@@ -1,4 +1,5 @@
 import React from 'react';
+import { WHATSAPP_URL } from '../../constants/brand';
 
 interface ContactMethod {
   icon: string;
@@ -16,7 +17,7 @@ const OtherWaysSection: React.FC = () => {
       title: 'WhatsApp Us',
       description: 'Chat directly with our support team via WhatsApp for instant assistance.',
       action: 'Start Chat',
-      actionLink: 'https://wa.me/919876543210',
+      actionLink: WHATSAPP_URL,
       bgColor: 'bg-[#E8F5E9]'
     },
     {

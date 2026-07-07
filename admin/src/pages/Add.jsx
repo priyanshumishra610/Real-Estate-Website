@@ -131,7 +131,7 @@ const PropertyForm = () => {
           className="mb-8"
         >
           <h1 className="text-3xl font-bold text-[#1C1B1A] mb-1">Add New Property</h1>
-          <p className="text-[#5A5856]">Fill in the details to list a new property on BuildEstate</p>
+          <p className="text-[#5A5856]">Fill in the details to list a new property on PropVista</p>
         </motion.div>
 
         <motion.form
@@ -213,7 +213,7 @@ const PropertyForm = () => {
                   <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9CA3AF]" />
                   <input type="tel" id="phone" name="phone" required
                     value={formData.phone} onChange={handleInputChange}
-                    placeholder="+91 98765 43210" className={cn(inputClass, 'pl-10')} />
+                    placeholder="+91 6261951953" className={cn(inputClass, 'pl-10')} />
                 </div>
               </div>
               <div>

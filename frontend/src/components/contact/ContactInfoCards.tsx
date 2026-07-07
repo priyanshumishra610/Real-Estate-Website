@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  OFFICE_ADDRESS_LINES,
+  OFFICE_MAPS_URL,
+} from '../../constants/brand';
 
 const ContactInfoCards: React.FC = () => {
   return (
@@ -16,12 +23,11 @@ const ContactInfoCards: React.FC = () => {
               Visit Our Office
             </h3>
             <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
-              502, Devpath Building,<br />
-              Near Torrent Lab,<br />
-              Ashram Road, Ahmedabad
+              {OFFICE_ADDRESS_LINES[0]}<br />
+              {OFFICE_ADDRESS_LINES[1]}
             </p>
             <a 
-              href="https://maps.google.com" 
+              href={OFFICE_MAPS_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-manrope font-medium text-sm text-[#D4755B] hover:text-[#C05621] transition-[color]"
@@ -49,22 +55,22 @@ const ContactInfoCards: React.FC = () => {
             </h3>
             <div className="space-y-2">
               <a 
-                href="tel:+919876543210" 
+                href={`tel:${CONTACT_PHONE_TEL}`}
                 className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-[color]"
               >
                 <span className="material-icons text-base">
                   call
                 </span>
-                <span>+91 98765 43210</span>
+                <span>{CONTACT_PHONE_DISPLAY}</span>
               </a>
               <a 
-                href="mailto:hello@buildestate.com" 
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-[color]"
               >
                 <span className="material-icons text-base">
                   email
                 </span>
-                <span>hello@buildestate.com</span>
+                <span>{CONTACT_EMAIL}</span>
               </a>
             </div>
           </div>
