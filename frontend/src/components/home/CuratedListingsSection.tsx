@@ -44,7 +44,7 @@ const CuratedListingsSection: React.FC = () => {
             <div className="relative h-[500px]">
               <img 
                 src={propertyImages[0]} 
-                alt="The Glass Pavilion luxury villa in Montecito California" 
+                alt="The Glass Pavilion luxury villa in Alibaug Maharashtra" 
                 className="absolute inset-0 w-full h-full object-cover" 
                 loading="eager"
                 fetchPriority="high"
@@ -55,9 +55,9 @@ const CuratedListingsSection: React.FC = () => {
                   FEATURED
                 </div>
                 <h3 className="font-fraunces text-3xl text-white mb-2">The Glass Pavilion</h3>
-                <p className="font-manrope font-light text-white/80 mb-4">Montecito, California</p>
+                <p className="font-manrope font-light text-white/80 mb-4">Alibaug, Maharashtra</p>
                 <div className="border-t border-white/20 pt-4 flex items-center justify-between">
-                  <span className="font-space-mono text-white">$12,500,000</span>
+                  <span className="font-space-mono text-white">₹12.5 Cr</span>
                   <div className="flex items-center gap-6 text-white/90">
                     <div className="flex items-center gap-2">
                       <span className="font-material-icons text-sm" aria-hidden="true">bed</span>
@@ -78,15 +78,15 @@ const CuratedListingsSection: React.FC = () => {
             <div className="relative h-[500px]">
               <img 
                 src={propertyImages[1]} 
-                alt="Skyline Penthouse luxury apartment in New York NY" 
+                alt="Skyline Penthouse luxury apartment in South Mumbai" 
                 className="absolute inset-0 w-full h-full object-cover" 
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-fraunces text-xl text-white mb-1">Skyline Penthouse</h3>
-                <p className="font-manrope text-sm text-white/70 mb-3">New York, NY</p>
-                <span className="font-space-mono text-sm text-white">$8,950,000</span>
+                <p className="font-manrope text-sm text-white/70 mb-3">South Mumbai</p>
+                <span className="font-space-mono text-sm text-white">₹8.95 Cr</span>
               </div>
             </div>
           </div>
@@ -96,15 +96,15 @@ const CuratedListingsSection: React.FC = () => {
             <div className="relative h-full">
               <img 
                 src={propertyImages[2]} 
-                alt="Desert Oasis modern home in Joshua Tree CA" 
+                alt="Desert Oasis modern home in Lonavala Maharashtra" 
                 className="absolute inset-0 w-full h-full object-cover" 
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-fraunces text-xl text-white mb-1">Desert Oasis</h3>
-                <p className="font-manrope text-sm text-white/70 mb-3">Joshua Tree, CA</p>
-                <span className="font-space-mono text-sm text-white">$3,200,000</span>
+                <p className="font-manrope text-sm text-white/70 mb-3">Lonavala, Maharashtra</p>
+                <span className="font-space-mono text-sm text-white">₹3.2 Cr</span>
               </div>
             </div>
           </div>
@@ -114,16 +114,16 @@ const CuratedListingsSection: React.FC = () => {
             <div className="relative h-[800px]">
               <img 
                 src={propertyImages[3]} 
-                alt="Coastal Retreat mansion in Malibu California" 
+                alt="Coastal Retreat mansion in Juhu Mumbai" 
                 className="absolute inset-0 w-full h-full object-cover" 
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <h3 className="font-fraunces text-2xl text-white mb-2">Coastal Retreat</h3>
-                <p className="font-manrope text-white/70 mb-6">Malibu, California</p>
+                <p className="font-manrope text-white/70 mb-6">Juhu, Mumbai</p>
                 <div className="border-t border-white/20 pt-6 flex items-center justify-between">
-                  <span className="font-space-mono text-white">$15,000,000</span>
+                  <span className="font-space-mono text-white">₹15 Cr</span>
                   <button className="text-white hover:bg-white/10 p-2 rounded-full transition-all" aria-label="View Coastal Retreat">
                     <span className="font-material-icons text-2xl" aria-hidden="true">arrow_forward</span>
                   </button>

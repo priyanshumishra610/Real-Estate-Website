@@ -18,7 +18,7 @@ const StatsSection: React.FC = () => {
             <div className="font-syne font-medium text-sm text-[#6b7280] uppercase tracking-wider">Cities Covered</div>
           </div>
           <div className="text-center">
-            <div className="font-space-mono font-bold text-4xl text-[#D4755B] mb-2">$1.2B</div>
+            <div className="font-space-mono font-bold text-4xl text-[#D4755B] mb-2">₹10,000 Cr+</div>
             <div className="font-syne font-medium text-sm text-[#6b7280] uppercase tracking-wider">Market Value</div>
           </div>
         </div>

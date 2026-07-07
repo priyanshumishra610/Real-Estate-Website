@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
   RefreshCw, AlertTriangle, ArrowRight, AlertCircle,
-  Building2, Users, Calendar, DollarSign, Activity,
+  Building2, Users, Calendar, IndianRupee, Activity,
   CheckCircle2, XCircle, Clock, TrendingUp,
 } from "lucide-react";
 import {
@@ -282,7 +282,7 @@ const Dashboard = () => {
         ? `₹${(stats.avgPropertyPrice / 100000).toFixed(1)}L`
         : null,
       sub: "Average listing price",
-      icon: DollarSign,
+      icon: IndianRupee,
       accent: false,
     },
   ];
